@@ -11,9 +11,9 @@ public class Main {
 
         List<Conta> contasBradesco = new ArrayList<>();
 
-        contasBradesco.add(new ContaCorrente(new Cliente("João Pedro")));
-        contasBradesco.add(new ContaPoupanca((new Cliente("Lucas"))));
-        contasBradesco.add(new ContaCorrente(new Cliente("Jorge")));
+        contasBradesco.add(new ContaCorrente(new Cliente("João Pedro"), bradesco));
+        contasBradesco.add(new ContaPoupanca(new Cliente("Lucas"), bradesco));
+        contasBradesco.add(new ContaCorrente(new Cliente("Jorge"), bradesco));
 
         bradesco.setContas(contasBradesco);
 
